@@ -69,7 +69,6 @@ public class StudentManagementConsoleImpl implements StudentManagement{
 
         System.out.println("Enter the new name: ");
         String studentToUpdate = inputService.getString();
-        //System.out.println("Test " + studentToUpdate);
         student.setName(studentToUpdate);
         studentDao.save(student);
         return student;
